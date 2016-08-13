@@ -40,7 +40,7 @@ public class Html2Pdf {
 			ICacheService cacheService = SpringContextHolder.getBean("cacheService", CacheService.class);
 			XMLWorkerHelper.getInstance().parseXHtml(writer, document, HttpPostGet.GetString(
 					cacheService.getSetting(Const.SETTING_DOMAIN).getValue() + "/interface/detail/pdf.do?id=" + interFaceId),
-					Charset.forName("UTF-8"));
+					Charset.forName("UTF-8"), new ChinaFont());
 			document.close();
 			return destDir;
 		} catch (Exception e) {

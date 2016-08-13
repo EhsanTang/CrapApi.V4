@@ -30,7 +30,7 @@ public class Const {
 	public static final String AUTH_LOG = "LOG";
 	public static final String AUTH_SOURCE = "SOURCE";
 	// 缓存
-	public static int CACHE_USER_TIME = 60 *30;// 用户相关数据缓存30 分钟
+	public static int CACHE_USER_TIME = 60 * 60 *12;// 用户相关数据缓存12小时
 	public static final String CACHE_USER= ":user";
 	public static final String CACHE_AUTH = ":auth";
 	public static final String CACHE_IMGCODE = ":imgCode";
